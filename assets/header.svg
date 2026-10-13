@@ -1,48 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Joyce Malik. Stillness, with a leaf falling.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Joyce Malik. A leaf with a small universe inside it, falling.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0f2a22"/>
-      <stop offset="0.55" stop-color="#1d4a3a"/>
-      <stop offset="1" stop-color="#3d6b52"/>
+      <stop offset="0" stop-color="#08141f"/>
+      <stop offset="0.5" stop-color="#12352f"/>
+      <stop offset="1" stop-color="#2f5f4a"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.6">
-      <stop offset="0" stop-color="#cfe8c8" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#cfe8c8" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.5" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#9fd0c0" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#9fd0c0" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#b7d99a"/>
-      <stop offset="1" stop-color="#5f9a62"/>
+    <linearGradient id="cosmos" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a3d"/>
+      <stop offset="0.5" stop-color="#2a3f7a"/>
+      <stop offset="1" stop-color="#2f7a68"/>
     </linearGradient>
+    <radialGradient id="neb" cx="0.35" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#b79ae0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#b79ae0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="leafclip"><path id="lp" d="M0,-40 C32,-28 34,12 0,44 C-34,12 -32,-28 0,-40 Z"/></clipPath>
     <style>
       .title { font: 300 64px Georgia, 'Times New Roman', serif; fill: #eaf3e4; letter-spacing: 2px; }
       .sub   { font: italic 300 18px Georgia, 'Times New Roman', serif; fill: #b9d3b4; letter-spacing: 1px; }
-      .fall  { animation: fall 14s cubic-bezier(.45,.05,.55,.95) infinite; }
-      .sway  { transform-box: fill-box; transform-origin: center; animation: sway 4.6s ease-in-out infinite; }
+      .fall  { animation: fall 16s cubic-bezier(.45,.05,.55,.95) infinite; }
+      .sway  { transform-box: fill-box; transform-origin: center; animation: sway 5s ease-in-out infinite; }
+      .tw    { animation: tw 4s ease-in-out infinite; }
+      .orbit { transform-box: fill-box; transform-origin: center; animation: spin 22s linear infinite; }
       .fade-in { animation: fadein 3s ease-out both; }
       .fade-in.d { animation-delay: 1.2s; }
       @keyframes fall {
-        0%   { transform: translate(690px, -50px); opacity: 0; }
+        0%   { transform: translate(690px, -60px); opacity: 0; }
         8%   { opacity: 1; }
         50%  { transform: translate(610px, 150px); }
         92%  { opacity: 1; }
-        100% { transform: translate(700px, 340px); opacity: 0; }
+        100% { transform: translate(700px, 350px); opacity: 0; }
       }
-      @keyframes sway {
-        0%,100% { transform: rotate(-35deg); }
-        50%     { transform: rotate(40deg); }
-      }
+      @keyframes sway { 0%,100% { transform: rotate(-28deg); } 50% { transform: rotate(32deg); } }
+      @keyframes tw { 0%,100% { opacity: .15; } 50% { opacity: .95; } }
+      @keyframes spin { to { transform: rotate(360deg); } }
       @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
-      @media (prefers-reduced-motion: reduce) { .fall, .sway, .fade-in { animation: none; } .fall { transform: translate(650px,150px); } }
+      @media (prefers-reduced-motion: reduce) { .fall, .sway, .tw, .orbit, .fade-in { animation: none; } .fall { transform: translate(650px,150px); } .tw { opacity: .6; } }
     </style>
   </defs>
   <rect width="900" height="300" fill="url(#bg)"/>
   <rect width="900" height="300" fill="url(#glow)"/>
+  <circle cx="473" cy="246" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:5.6s;animation-delay:-3.0s"/><circle cx="199" cy="270" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:6.3s;animation-delay:-3.8s"/><circle cx="106" cy="236" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:5.4s;animation-delay:-0.9s"/><circle cx="720" cy="29" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:5.8s;animation-delay:-5.8s"/><circle cx="640" cy="88" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:3.7s;animation-delay:-5.0s"/><circle cx="46" cy="105" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:6.2s;animation-delay:-3.6s"/><circle cx="344" cy="233" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:5.7s;animation-delay:-3.1s"/><circle cx="521" cy="10" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:4.5s;animation-delay:-2.7s"/><circle cx="574" cy="50" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:4.3s;animation-delay:-1.9s"/><circle cx="305" cy="23" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:3.9s;animation-delay:-3.4s"/><circle cx="120" cy="156" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:3.6s;animation-delay:-0.4s"/><circle cx="711" cy="8" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:6.7s;animation-delay:-1.3s"/><circle cx="491" cy="200" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:5.5s;animation-delay:-2.5s"/><circle cx="213" cy="146" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:4.7s;animation-delay:-0.5s"/><circle cx="429" cy="68" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:3.9s;animation-delay:-1.5s"/><circle cx="71" cy="246" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:5.5s;animation-delay:-1.1s"/><circle cx="468" cy="268" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:6.2s;animation-delay:-5.9s"/><circle cx="439" cy="204" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:7.0s;animation-delay:-2.4s"/><circle cx="10" cy="146" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:3.6s;animation-delay:-6.0s"/><circle cx="201" cy="209" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:4.0s;animation-delay:-0.3s"/><circle cx="462" cy="140" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:4.7s;animation-delay:-4.6s"/><circle cx="313" cy="205" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:4.2s;animation-delay:-0.4s"/><circle cx="661" cy="132" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:4.8s;animation-delay:-3.6s"/><circle cx="474" cy="73" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:4.0s;animation-delay:-5.0s"/><circle cx="405" cy="101" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:4.3s;animation-delay:-1.9s"/><circle cx="635" cy="135" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:5.7s;animation-delay:-1.0s"/><circle cx="577" cy="108" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:5.6s;animation-delay:-5.3s"/><circle cx="441" cy="32" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:5.3s;animation-delay:-0.7s"/><circle cx="271" cy="130" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:6.4s;animation-delay:-1.5s"/><circle cx="620" cy="259" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:6.8s;animation-delay:-3.1s"/><circle cx="80" cy="72" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:5.8s;animation-delay:-2.9s"/><circle cx="640" cy="45" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:6.7s;animation-delay:-1.3s"/><circle cx="776" cy="16" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:5.1s;animation-delay:-1.6s"/><circle cx="71" cy="31" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:5.4s;animation-delay:-1.7s"/><circle cx="144" cy="55" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:5.1s;animation-delay:-0.8s"/><circle cx="348" cy="275" r="0.9" fill="#eaf3e4" class="tw" style="animation-duration:6.7s;animation-delay:-3.5s"/><circle cx="496" cy="191" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:3.6s;animation-delay:-5.8s"/><circle cx="661" cy="46" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:4.6s;animation-delay:-0.4s"/><circle cx="149" cy="45" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:4.8s;animation-delay:-2.7s"/><circle cx="55" cy="74" r="1.1" fill="#eaf3e4" class="tw" style="animation-duration:5.9s;animation-delay:-2.1s"/><circle cx="89" cy="221" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:5.5s;animation-delay:-5.2s"/><circle cx="649" cy="203" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:5.6s;animation-delay:-3.5s"/><circle cx="92" cy="54" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:6.6s;animation-delay:-6.0s"/><circle cx="755" cy="177" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:5.9s;animation-delay:-5.6s"/><circle cx="478" cy="233" r="1.4" fill="#eaf3e4" class="tw" style="animation-duration:3.8s;animation-delay:-5.0s"/><circle cx="778" cy="271" r="0.7" fill="#eaf3e4" class="tw" style="animation-duration:3.8s;animation-delay:-1.9s"/>
   <text class="title fade-in" x="70" y="145">Joyce Malik</text>
   <text class="sub fade-in d" x="74" y="188">doing, because there is doing.</text>
   <g class="fall">
     <g class="sway">
-      <path d="M0,-26 C20,-18 22,8 0,28 C-22,8 -20,-18 0,-26 Z" fill="url(#leaf)"/>
-      <path d="M0,-22 L0,30" stroke="#2f5a43" stroke-width="1.4" fill="none"/>
+      <g clip-path="url(#leafclip)">
+        <rect x="-40" y="-44" width="80" height="92" fill="url(#cosmos)"/>
+        <rect x="-40" y="-44" width="80" height="92" fill="url(#neb)"/>
+        <circle cx="-13.4" cy="22.0" r="0.5" fill="#fff" class="tw" style="animation-duration:4.0s;animation-delay:-2.5s"/><circle cx="11.8" cy="-10.2" r="0.5" fill="#fff" class="tw" style="animation-duration:2.9s;animation-delay:-1.8s"/><circle cx="3.1" cy="1.8" r="0.7" fill="#fff" class="tw" style="animation-duration:3.6s;animation-delay:-3.3s"/><circle cx="11.0" cy="-7.0" r="0.9" fill="#fff" class="tw" style="animation-duration:4.1s;animation-delay:-1.3s"/><circle cx="8.5" cy="12.7" r="0.5" fill="#fff" class="tw" style="animation-duration:3.5s;animation-delay:-4.4s"/><circle cx="2.3" cy="-7.4" r="0.5" fill="#fff" class="tw" style="animation-duration:3.4s;animation-delay:-0.7s"/><circle cx="11.1" cy="-20.1" r="0.5" fill="#fff" class="tw" style="animation-duration:3.2s;animation-delay:-4.8s"/><circle cx="-9.3" cy="-1.3" r="0.7" fill="#fff" class="tw" style="animation-duration:4.6s;animation-delay:-4.6s"/><circle cx="-3.3" cy="1.9" r="0.9" fill="#fff" class="tw" style="animation-duration:4.6s;animation-delay:-1.6s"/><circle cx="13.5" cy="-1.2" r="0.5" fill="#fff" class="tw" style="animation-duration:3.2s;animation-delay:-4.1s"/><circle cx="3.0" cy="9.2" r="0.7" fill="#fff" class="tw" style="animation-duration:3.3s;animation-delay:-2.9s"/><circle cx="8.2" cy="-21.1" r="0.5" fill="#fff" class="tw" style="animation-duration:3.0s;animation-delay:-2.0s"/><circle cx="7.5" cy="-9.7" r="0.5" fill="#fff" class="tw" style="animation-duration:5.0s;animation-delay:-4.0s"/><circle cx="-10.8" cy="-17.0" r="0.9" fill="#fff" class="tw" style="animation-duration:4.5s;animation-delay:-3.3s"/><circle cx="12.8" cy="9.5" r="0.5" fill="#fff" class="tw" style="animation-duration:3.1s;animation-delay:-4.1s"/><circle cx="6.0" cy="12.7" r="0.9" fill="#fff" class="tw" style="animation-duration:2.9s;animation-delay:-3.6s"/>
+        <g class="orbit"><ellipse cx="0" cy="2" rx="22" ry="8" fill="none" stroke="#cfe8c8" stroke-opacity=".35" stroke-width=".8" transform="rotate(-25)"/><circle cx="21" cy="-7" r="2.2" fill="#f2d98a"/></g>
+      </g>
+      <use href="#lp" fill="none" stroke="#b7d99a" stroke-width="1.3" stroke-opacity=".8"/>
+      <path d="M0,-34 L0,42" stroke="#b7d99a" stroke-opacity=".35" stroke-width="1" fill="none"/>
     </g>
   </g>
 </svg>
