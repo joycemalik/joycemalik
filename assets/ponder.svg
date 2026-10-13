@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="70" viewBox="0 0 900 70" role="img" aria-label="Things I keep wondering about">
+  <style>
+    text { font: italic 300 20px Georgia, 'Times New Roman', serif; fill: #5f9a62; text-anchor: middle; opacity: 0; animation: cycle 20s ease-in-out infinite; }
+    .a { animation-delay: 0s; } .b { animation-delay: 5s; } .c { animation-delay: 10s; } .d { animation-delay: 15s; }
+    @keyframes cycle { 0% {opacity:0} 4% {opacity:1} 21% {opacity:1} 25% {opacity:0} 100% {opacity:0} }
+    @media (prefers-reduced-motion: reduce) { text { animation: none; } .a { opacity: 1; } }
+  </style>
+  <text class="a" x="450" y="40">who is looking?</text>
+  <text class="b" x="450" y="40">the label, the perceived, the one perceiving. funny, na?</text>
+  <text class="c" x="450" y="40">what is a wind, really, to a leaf?</text>
+  <text class="d" x="450" y="40">physics is just philosophy with better questions.</text>
+</svg>

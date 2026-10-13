@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="140" viewBox="0 0 900 140" role="img" aria-label="Lifetime numbers">
+<style>
+  text { font-family: Georgia, 'Times New Roman', serif; }
+  .t  { font-size: 15px; font-style: italic; fill: #b9d3b4; letter-spacing: .5px; }
+  .n  { font-size: 34px; font-weight: 300; fill: #eaf3e4; }
+  .l  { font-size: 13px; fill: #8fb08e; letter-spacing: 1px; }
+  .fi { opacity: 0; animation: fi 1.4s ease-out forwards; }
+  @keyframes fi { to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }</style><rect width="900" height="140" rx="14" fill="#0f2a22"/>
+<text class="t" x="28" y="30">in numbers, counting what you cannot see too</text><g class="fi" style="animation-delay:0s"><text class="n" x="28" y="72">583</text><text class="l" x="28" y="96">COMMITS, ALL TIME</text><line x1="28" y1="108" x2="74" y2="108" stroke="#5f9a62" stroke-width="1.5"/></g><g class="fi" style="animation-delay:0.25s"><text class="n" x="239" y="72">79</text><text class="l" x="239" y="96">REPOS (26 PRIVATE)</text><line x1="239" y1="108" x2="285" y2="108" stroke="#5f9a62" stroke-width="1.5"/></g><g class="fi" style="animation-delay:0.5s"><text class="n" x="450" y="72">12</text><text class="l" x="450" y="96">PULL REQUESTS</text><line x1="450" y1="108" x2="496" y2="108" stroke="#5f9a62" stroke-width="1.5"/></g><g class="fi" style="animation-delay:0.75s"><text class="n" x="661" y="72">2</text><text class="l" x="661" y="96">STARS</text><line x1="661" y1="108" x2="707" y2="108" stroke="#5f9a62" stroke-width="1.5"/></g></svg>

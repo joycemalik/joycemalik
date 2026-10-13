@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" role="img" aria-label="Languages across public and private repos">
+<defs><clipPath id="c"><rect x="28" y="52" width="844" height="14" rx="7"/></clipPath><style>
+  text { font-family: Georgia, 'Times New Roman', serif; }
+  .t  { font-size: 15px; font-style: italic; fill: #b9d3b4; letter-spacing: .5px; }
+  .n  { font-size: 34px; font-weight: 300; fill: #eaf3e4; }
+  .l  { font-size: 13px; fill: #8fb08e; letter-spacing: 1px; }
+  .fi { opacity: 0; animation: fi 1.4s ease-out forwards; }
+  @keyframes fi { to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }</style></defs>
+<rect width="900" height="150" rx="14" fill="#0f2a22"/>
+<text class="t" x="28" y="30">what the hands reach for</text>
+<g clip-path="url(#c)"><rect x="28.0" y="52" height="14" width="523.0" fill="#e3f2c8" class="fi" style="animation-delay:0s"/><rect x="551.0" y="52" height="14" width="96.5" fill="#b7d99a" class="fi" style="animation-delay:0.15s"/><rect x="647.5" y="52" height="14" width="77.4" fill="#86b97a" class="fi" style="animation-delay:0.3s"/><rect x="724.9" y="52" height="14" width="71.4" fill="#5f9a62" class="fi" style="animation-delay:0.44999999999999996s"/><rect x="796.3" y="52" height="14" width="64.1" fill="#417a52" class="fi" style="animation-delay:0.6s"/><rect x="860.4" y="52" height="14" width="11.6" fill="#2f5f46" class="fi" style="animation-delay:0.75s"/></g><circle cx="33" cy="94" r="5" fill="#e3f2c8"/><text class="l" x="46" y="98">JAVASCRIPT  61.6%</text><circle cx="323" cy="94" r="5" fill="#b7d99a"/><text class="l" x="336" y="98">TYPESCRIPT  11.4%</text><circle cx="613" cy="94" r="5" fill="#86b97a"/><text class="l" x="626" y="98">HTML  9.1%</text><circle cx="33" cy="118" r="5" fill="#5f9a62"/><text class="l" x="46" y="122">SYSTEMVERILOG  8.4%</text><circle cx="323" cy="118" r="5" fill="#417a52"/><text class="l" x="336" y="122">PYTHON  7.6%</text><circle cx="613" cy="118" r="5" fill="#2f5f46"/><text class="l" x="626" y="122">CSS  1.4%</text></svg>
